@@ -27,7 +27,7 @@ jobs:
           pyinstaller --onefile --windowed account_pdf_matcher_gui.py
 
       - name: Upload EXE as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: account_pdf_matcher_gui_exe
           path: dist/account_pdf_matcher_gui.exe
